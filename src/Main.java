@@ -1,20 +1,27 @@
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.net.URL;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-    /*    Scanner input = new Scanner(System.in);
-        System.out.println("Please choose the a currency which you would like to convert: ");    //+ input);
-        BufferedReader reader = new BufferedReader(new FileReader(
-                "E:\\MY Stuff\\Universty\\ComputerLinguistic\\currencies.txt"));
-        String currency = reader.readLine();
-    */
+    private static String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
+    private static String DB_CONNECTION = "jdbc:mysql://localhost:3306/currency";
+    private static String DB_USER = "root";
+    private static String DB_PASSWORD = "9706194543";
+
+    public static void main(String[] args) throws SQLException {
+       /* BufferedReader reader = new BufferedReader(new FileReader(
+                "E:\\MY Stuff\\Universty\\ComputerLinguistic\\currencies.txt"));*/
+
+      //   textReader(); //calling the method i guess
 
         Scanner option = new Scanner(System.in);
         String readOptions;
-        System.out.println("| From which currency do you wish to convert to BGN?: ");
+        System.out.println("From which currency do you wish to convert to BGN?: ");
         System.out.println("1. Euro/EUR");
         System.out.println("2. Pound/GBP");
         System.out.println("3. Dollar/USD");
@@ -49,6 +56,11 @@ public class Main {
         while (!readOptions.equals("5"));
     }
 
+    private static void textReader(BufferedReader reader) throws FileNotFoundException {
+        reader = new BufferedReader(new FileReader(
+                "E:\\MY Stuff\\Universty\\ComputerLinguistic\\currencies.txt"));
+    }
+
     private static void optionEuro() {
 
     }
@@ -64,4 +76,5 @@ public class Main {
     private static void optionFranc(){
 
     }
+
 }

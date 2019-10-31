@@ -32,7 +32,7 @@
   <component name="ProjectId" id="1SNxLQhDsGk9yaMBeN4xl6JLOlx" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../foodStore" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -81,6 +81,11 @@
       <workItem from="1572266043671" duration="3514000" />
       <workItem from="1572275627219" duration="3000" />
       <workItem from="1572339593546" duration="12000" />
+      <workItem from="1572358673421" duration="1909000" />
+      <workItem from="1572437222726" duration="4527000" />
+      <workItem from="1572502110395" duration="307000" />
+      <workItem from="1572503093709" duration="4807000" />
+      <workItem from="1572524890149" duration="1197000" />
     </task>
     <servers />
   </component>
