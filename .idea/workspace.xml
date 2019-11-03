@@ -32,9 +32,17 @@
   <component name="ProjectId" id="1SNxLQhDsGk9yaMBeN4xl6JLOlx" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../foodStore" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mysql-connector-java-8.0.18.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\My Stuff\IntelliJPr\CurrencyConverter\lib" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -86,6 +94,11 @@
       <workItem from="1572502110395" duration="307000" />
       <workItem from="1572503093709" duration="4807000" />
       <workItem from="1572524890149" duration="1197000" />
+      <workItem from="1572540792637" duration="495000" />
+      <workItem from="1572541584519" duration="1656000" />
+      <workItem from="1572610065108" duration="743000" />
+      <workItem from="1572710773219" duration="2169000" />
+      <workItem from="1572784845145" duration="1906000" />
     </task>
     <servers />
   </component>
