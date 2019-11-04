@@ -29,6 +29,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SNxLQhDsGk9yaMBeN4xl6JLOlx" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -99,10 +102,26 @@
       <workItem from="1572610065108" duration="743000" />
       <workItem from="1572710773219" duration="2169000" />
       <workItem from="1572784845145" duration="1906000" />
+      <workItem from="1572869368362" duration="649000" />
+      <workItem from="1572872625742" duration="6759000" />
+      <workItem from="1572881703596" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

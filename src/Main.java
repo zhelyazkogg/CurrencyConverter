@@ -11,34 +11,30 @@ import java.util.stream.Stream;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-       try{
-           Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/currency",
-                   "root","9706194543");
-           Statement statement = conn.createStatement();
-           String sql = "SELECT * FROM currency.currencies";
-           ResultSet resultSet = statement.executeQuery(sql);
-           /* while(resultSet.next()){
-               System.out.println(resultSet.getString("EUR"));
-           } */
-       } catch (SQLException e){
-           e.printStackTrace();
-        }
-
-        Path path = Paths.get("E:\\My Stuff\\Universty\\ComputerLinguistic\\currencies.txt");
-        StringBuilder str = new StringBuilder();
         try {
-         BufferedReader reader = Files.newBufferedReader(path);
-         reader.lines().forEach(s -> str.append(s + " "));
-       } catch (IOException e){
-           System.out.println(e.getMessage());
-       }
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/currency",
+                    "root", "9706194543");
+            Statement statement = conn.createStatement();
+            String sql = "SELECT * FROM currency.currencies";
+            ResultSet resultSet = statement.executeQuery(sql);
 
-        Pattern pattern = Pattern.compile("([A-Z]{3})\\s\\d.+");
-        Matcher matcher = pattern.matcher(str);
-        // System.out.println(str);
-        while(matcher.find()) {
-            System.out.println(matcher.group(1));
+            Path path = Paths.get("E:\\My Stuff\\Universty\\ComputerLinguistic\\currencies.txt");
+            StringBuilder str = new StringBuilder();
+            try {
+                BufferedReader reader = Files.newBufferedReader(path);
+                StringBuilder finalStr = str;
+                reader.lines().forEach(s -> finalStr.append(s).append(" "));
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+            }
+            String regex = "(\\p{Sc}\\s\\d+[.,]?\\d+)|([A-Z]{3,}\\s\\d+[.,]?\\d+)";
+            Pattern pattern = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+            Matcher matcher = pattern.matcher(str);
+            while (matcher.find()) {
+                System.out.println(matcher.group());
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-
     }
 }
