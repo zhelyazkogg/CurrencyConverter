@@ -35,7 +35,7 @@
   <component name="ProjectId" id="1SNxLQhDsGk9yaMBeN4xl6JLOlx" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/mysql-connector-java-8.0.18.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../foodStore" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -105,6 +105,7 @@
       <workItem from="1572869368362" duration="649000" />
       <workItem from="1572872625742" duration="6759000" />
       <workItem from="1572881703596" duration="22000" />
+      <workItem from="1572964149772" duration="8488000" />
     </task>
     <servers />
   </component>
