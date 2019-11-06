@@ -4,6 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.*;
+import java.util.Currency;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -32,15 +33,16 @@ public class Main {
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(str);
             while (matcher.find()) {
-                System.out.println(matcher.group());
+                System.out.println(matcher.group(0));
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        Scanner choice = new Scanner(System.in);
-        System.out.println("Which currency do you wish to convert into BGN?:");
-        System.out.println("1. Euro/EUR\n2. Dollars/USD\n3. Pounds/GBP\n4. Franc/CHF");
-        choice.next();
 
-        }
+       /* Scanner choice = new Scanner(System.in);
+        System.out.println("\nWhich currency do you wish to convert into BGN?:");
+        System.out.println("1. Euro/EUR\n2. Dollars/USD\n3. Pounds/GBP\n4. Franc/CHF");
+        choice.hasNext();*/
+
     }
+}
