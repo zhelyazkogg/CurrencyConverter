@@ -12,7 +12,13 @@ import java.util.stream.Stream;
 
 public class Main {
 
-    public static void main(String[] args) throws IOException {
+    public class Value{
+        String currency = "bgn";
+        int value = 10;
+    }
+
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+
         try {
             Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/currency",
                     "root", "9706194543");
@@ -32,8 +38,9 @@ public class Main {
             String regex = "(\\p{Sc}\\s\\d+[.,]?\\d+)|([A-Z]{3,}\\s\\d+[.,]?\\d+)|(\\d+[,.]?\\d+\\s[a-z]+)";
             Pattern pattern = Pattern.compile(regex);
             Matcher matcher = pattern.matcher(str);
+
             while (matcher.find()) {
-                System.out.println(matcher.group(0));
+                System.out.println(matcher.group());
             }
         } catch (SQLException e) {
             e.printStackTrace();
