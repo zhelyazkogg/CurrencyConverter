@@ -1,13 +1,11 @@
-﻿EUR 12 
+﻿EUR 12
 USD 15.40
 GBP 32.50
-BGN 66.60
-CHF 121.65
+CHF 50.50
 € 875.53
 $ 43.20
 £ 875.41
 654.50 euro
 543.21 dollars
-123.14 pounds
-1453.43 leva
+16.43 pounds
 4321.42 franc
