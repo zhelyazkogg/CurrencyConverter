@@ -33,11 +33,14 @@ public class Main {
             // using a regular expression to get only the currencies with their values
             String regex = "(\\p{Sc}\\s\\d+[.,]?\\d+)|([A-Z]{3,}\\s\\d+[.,]?\\d+)|(\\d+[,.]?\\d+\\s[a-z]+)";
             String text = str.toString();
+            //Using Pattern for reading the regex
             Pattern pattern = Pattern.compile(regex);
+            // Using matcher with pattern for reading the text and applying regex
             Matcher matcher = pattern.matcher(text);
             String currency;
             String currencyValue;
             String calculatedCurrency;
+            // reading the text before it is updated
             System.out.println(text);
             // formating the currencies to the second number after the decimal point
             DecimalFormat df = new DecimalFormat("#.##");
@@ -47,7 +50,7 @@ public class Main {
                     currency = matcher.group().split("\\s")[0];
                     // getting the second element
                     currencyValue = matcher.group().split("\\s")[1];
-
+                    // getting the "currency" and "value" from the DB
                     if (currency.equalsIgnoreCase(resultSet.getString("currency"))){
                         calculatedCurrency =
                                 String.valueOf(df.format(Double.parseDouble(currencyValue)
